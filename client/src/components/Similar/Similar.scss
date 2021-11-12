@@ -1,0 +1,16 @@
+.similar-movies-heading {
+  margin: 3rem 0rem 0.5rem 2rem;
+}
+.similar-movies-container {
+  height: 450px;
+  overflow: hidden;
+  .similar-movies {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

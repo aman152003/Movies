@@ -1,0 +1,16 @@
+.cast-heading {
+  margin: 3rem 0rem 0rem 2rem;
+}
+.castlist-container {
+  overflow: hidden;
+  height: 380px;
+  .castlist {
+    display: flex;
+    overflow-x: auto;
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+    &::-webkit-scrollbar {
+      display: none;
+    }
+  }
+}

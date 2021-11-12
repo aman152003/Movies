@@ -1,0 +1,138 @@
+@import "Variables";
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Open Sans", sans-serif;
+}
+button {
+  border: none;
+  outline: none;
+  &:hover {
+    cursor: pointer;
+    opacity: 0.9;
+  }
+}
+ul {
+  list-style: none;
+}
+a {
+  text-decoration: none;
+}
+p {
+  line-height: 150%;
+}
+
+/* For Signup and Login form */
+.form {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  width: 400px;
+  border-radius: 5px;
+  .input {
+    width: 300px;
+    margin-top: 1rem;
+    @media (max-width: 450px) {
+      width: 250px;
+    }
+    input {
+      padding: 0.6rem 1rem;
+      width: 100%;
+      border: 2px solid var(--Black);
+      outline: none;
+    }
+  }
+  p {
+    font-size: 0.85rem;
+    margin-top: 5px;
+    color: var(--Light-Red);
+  }
+  .form-btn {
+    margin-top: 2.5rem;
+  }
+  li {
+    margin-top: 2rem;
+    list-style: none;
+  }
+}
+/* xxx For Signup and Login form xxx */
+
+/* For Searchbar in Movieslist and Showslist Pages */
+.search {
+  width: fit-content;
+  border: 2px solid var(--Black);
+  border-radius: 5px;
+  display: flex;
+  align-items: center;
+  margin: 2.5rem auto 2.5rem auto;
+  padding: 0.4rem 1rem;
+  input {
+    width: 250px;
+    outline: none;
+    border: none;
+    font-size: 1rem;
+    @media (max-width: 500px) {
+      width: 200px;
+    }
+    @media (max-width: 350px) {
+      width: 160px;
+    }
+  }
+}
+/* xxx For Searchbar in Movieslist and Showslist Pages xxx */
+
+/* For Watchlist and Favorites Page */
+.list {
+  width: 80%;
+  margin: 5rem auto 0 auto;
+  display: flex;
+  justify-content: space-around;
+  flex-wrap: wrap;
+}
+/* xxx For Watchlist and Favorites Page xxx */
+
+/* For Movieslist and Showslist */
+.second-list {
+  width: 80%;
+  margin: 0 auto;
+  .list {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-around;
+  }
+  .change-page {
+    display: flex;
+    justify-content: center;
+    margin-top: 3rem;
+    @media (max-width: 450px) {
+      flex-direction: column;
+      align-items: center;
+    }
+    .next {
+      margin-left: 1rem;
+      @media (max-width: 450px) {
+        margin-left: 0rem;
+        margin-top: 0.5rem;
+      }
+    }
+  }
+}
+/* xxx For Movieslist and Showslist xxx */
+
+.app-container {
+  max-width: 100vw;
+  min-height: 100vh;
+  overflow-x: hidden;
+  display: flex;
+  flex-direction: column;
+  .app {
+    min-height: 85vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    position: relative;
+    flex-grow: 100;
+  }
+}
