@@ -5,6 +5,13 @@
   box-sizing: border-box;
   font-family: "Open Sans", sans-serif;
 }
+html::-webkit-scrollbar {
+  display: none;
+}
+body {
+  -ms-overflow-style: none;
+  scrollbar-width: none;
+}
 button {
   border: none;
   outline: none;
